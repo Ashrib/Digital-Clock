@@ -10,7 +10,14 @@
             margin: 0%;
             padding: 0%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: black;
+            background-color: rgb(0, 0, 0);
+        }
+        #body{
+            display: flex;
+            height: calc(100vh);
+            width: calc(100wh);
+            justify-content: center;
+            align-items: center;
         }
         #container{
             display: flex;
@@ -20,7 +27,6 @@
             justify-content: center;
             align-items: center;
             border-radius: 15px;
-            margin: 10% 0 0 35%;
             box-shadow: 0px 0px 50px rgb(6, 28, 87);
         }
         h1{
@@ -77,16 +83,21 @@
     </style>
 </head>
 <body>
-    <div id="container">
-        <h1>Digital Clock</h1><br>
-    <div id="clock">
-        <div id="upper">
-            <div id="time"></div>
-            <div id="pm"></div>
+    <div id="body">
+        <div id="container">
+            <h1>Digital Clock</h1><br>
+        <div id="clock">
+            <div id="upper">
+                <div id="time"></div>
+                <div id="pm"></div>
+            </div>
+            <div id="lower"><span id="month"></span><span id="day"></span><span id="date"></span></div>
         </div>
-        <div id="lower"><span id="month"></span><span id="day"></span><span id="date"></span></div>
+        </div>
+    
     </div>
-    </div>
+
+
 
     <script src="./clock.js"></script>
 </body>
